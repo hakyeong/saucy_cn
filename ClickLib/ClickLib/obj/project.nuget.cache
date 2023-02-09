@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "WR4JH0+56J77DTf8KNN7BWpz9chcy8J+QuancSSaJQw7m9SMejd17ZK359OxnT3rFzWqekguVTiwELMZeGbnag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ying\\Downloads\\Compressed\\Saucy-master\\Saucy-master\\ClickLib\\ClickLib\\ClickLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ying\\.nuget\\packages\\ilrepack\\2.0.18\\ilrepack.2.0.18.nupkg.sha512",
+    "C:\\Users\\Ying\\.nuget\\packages\\reloaded.memory\\7.1.0\\reloaded.memory.7.1.0.nupkg.sha512",
+    "C:\\Users\\Ying\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.333\\stylecop.analyzers.1.2.0-beta.333.nupkg.sha512",
+    "C:\\Users\\Ying\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.333\\stylecop.analyzers.unstable.1.2.0.333.nupkg.sha512"
+  ],
+  "logs": []
+}

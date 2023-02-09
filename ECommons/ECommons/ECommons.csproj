@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Authors>NightmareXIV</Authors>
+		<Version>2.0.0.3</Version>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Platforms>x64</Platforms>
+		<LangVersion>latest</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<OutputPath>bin\$(Configuration)\</OutputPath>
+		<NoWarn>CS1591;CA1401</NoWarn>
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <Optimize>True</Optimize>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Documentation">
+		<DocumentationFile></DocumentationFile>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<DalamudLibPath>$(appdata)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))'">
+        	<DalamudLibPath>$(DALAMUD_HOME)/</DalamudLibPath>
+        	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    	</PropertyGroup>
+
+	<PropertyGroup>
+	  <LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Reference Include="Dalamud">
+	    <HintPath>D:\Game\addon\Hooks\dev\Dalamud.dll</HintPath>
+	  </Reference>
+	  <Reference Include="FFXIVClientStructs">
+	    <HintPath>D:\Game\addon\Hooks\dev\FFXIVClientStructs.dll</HintPath>
+	  </Reference>
+	  <Reference Include="ImGui.NET">
+	    <HintPath>D:\Game\addon\Hooks\dev\ImGui.NET.dll</HintPath>
+	  </Reference>
+	  <Reference Include="ImGuiScene">
+	    <HintPath>D:\Game\addon\Hooks\dev\ImGuiScene.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Lumina">
+	    <HintPath>D:\Game\addon\Hooks\dev\Lumina.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Lumina.Excel">
+	    <HintPath>D:\Game\addon\Hooks\dev\Lumina.Excel.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Newtonsoft.Json">
+	    <HintPath>D:\Game\addon\Hooks\dev\Newtonsoft.Json.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PInvoke.User32">
+	    <HintPath>D:\Game\addon\Hooks\dev\PInvoke.User32.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PInvoke.Windows.Core">
+	    <HintPath>D:\Game\addon\Hooks\dev\PInvoke.Windows.Core.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Reloaded.Hooks.Definitions">
+	    <HintPath>D:\Game\addon\Hooks\dev\Reloaded.Hooks.Definitions.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Serilog">
+	    <HintPath>D:\Game\addon\Hooks\dev\Serilog.dll</HintPath>
+	  </Reference>
+	  <Reference Include="SharpDX.Mathematics">
+	    <HintPath>D:\Game\addon\Hooks\dev\SharpDX.Mathematics.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+</Project>

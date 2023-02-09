@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Authors>Puni.sh</Authors>
+		<Version>1.0.0.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<Platforms>x64</Platforms>
+		<LangVersion>preview</LangVersion>
+		<DalamudDevPlugins>$(appdata)\XIVLauncher\devPlugins\Saucy\</DalamudDevPlugins>
+		<DalamudLibPath>$(appdata)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
+		<DalamudPluginPath>$(appdata)\XIVLauncher\installedPlugins\Saucy\$(version)</DalamudPluginPath>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+		<AssemblyName>Saucy</AssemblyName>
+		<PackageId>Saucy</PackageId>
+		<Product>Saucy</Product>
+		<RootNamespace>Saucy</RootNamespace>
+		<Nullable>disable</Nullable>
+		<NoWarn>CS1591;CS8632</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<OutputPath>bin/Release</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+		<OutputPath>$(DalamudDevPlugins)</OutputPath>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+		<PackageReference Include="PunishLib" Version="1.0.1.2" />
+		<PackageReference Include="ECommons" Version="2.0.0.4" />
+                <PackageReference Include="ClickLib" Version="1.2.0.1" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)' == 'Debug'">
+		<ProjectReference Include="..\PunishLib\PunishLib\PunishLib.csproj" />
+		<ProjectReference Include="..\ECommons\ECommons\ECommons.csproj" />
+		<ProjectReference Include="..\ClickLib\ClickLib\ClickLib.csproj" />
+	</ItemGroup>
+
+	<PropertyGroup Condition="'$(OS)' != 'Windows_NT' OR '$(CI)' == 'true'">
+		<DalamudLibPath>$(DALAMUD_HOME)/</DalamudLibPath>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DalamudPackager" Version="2.1.10" />
+		<PackageReference Include="NAudio" Version="2.1.0" />
+		<PackageReference Include="NAudio.Lame" Version="2.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Dalamud">
+	    <HintPath>D:\Game\addon\Hooks\dev\Dalamud.dll</HintPath>
+	  </Reference>
+	  <Reference Include="FFXIVClientStructs">
+	    <HintPath>D:\Game\addon\Hooks\dev\FFXIVClientStructs.dll</HintPath>
+	  </Reference>
+	  <Reference Include="ImGui.NET">
+	    <HintPath>D:\Game\addon\Hooks\dev\ImGui.NET.dll</HintPath>
+	  </Reference>
+	  <Reference Include="ImGuiScene">
+	    <HintPath>D:\Game\addon\Hooks\dev\ImGuiScene.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Lumina">
+	    <HintPath>D:\Game\addon\Hooks\dev\Lumina.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Lumina.Excel">
+	    <HintPath>D:\Game\addon\Hooks\dev\Lumina.Excel.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Newtonsoft.Json">
+	    <HintPath>D:\Game\addon\Hooks\dev\Newtonsoft.Json.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Saucy.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Sounds\Game Over.mp3">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Sounds\Moogle.mp3">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Sounds\Time Up.mp3">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+</Project>

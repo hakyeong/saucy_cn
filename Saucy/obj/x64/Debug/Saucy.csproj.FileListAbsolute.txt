@@ -1,0 +1,17 @@
+C:\Users\Ying\Downloads\Compressed\Saucy-master\Saucy-master\Saucy\obj\x64\Debug\Saucy.csproj.AssemblyReference.cache
+C:\Users\Ying\Downloads\Compressed\Saucy-master\Saucy-master\Saucy\obj\x64\Debug\Saucy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ying\Downloads\Compressed\Saucy-master\Saucy-master\Saucy\obj\x64\Debug\Saucy.AssemblyInfoInputs.cache
+C:\Users\Ying\Downloads\Compressed\Saucy-master\Saucy-master\Saucy\obj\x64\Debug\Saucy.AssemblyInfo.cs
+C:\Users\Ying\Downloads\Compressed\Saucy-master\Saucy-master\Saucy\obj\x64\Debug\Saucy.csproj.CoreCompileInputs.cache
+C:\Users\Ying\AppData\Roaming\XIVLauncher\devPlugins\Saucy\Sounds\Game Over.mp3
+C:\Users\Ying\AppData\Roaming\XIVLauncher\devPlugins\Saucy\Sounds\Moogle.mp3
+C:\Users\Ying\AppData\Roaming\XIVLauncher\devPlugins\Saucy\Sounds\Time Up.mp3
+C:\Users\Ying\AppData\Roaming\XIVLauncher\devPlugins\Saucy\libmp3lame.32.dll
+C:\Users\Ying\AppData\Roaming\XIVLauncher\devPlugins\Saucy\libmp3lame.64.dll
+C:\Users\Ying\AppData\Roaming\XIVLauncher\devPlugins\Saucy\Saucy.json
+C:\Users\Ying\AppData\Roaming\XIVLauncher\devPlugins\Saucy\Saucy.deps.json
+C:\Users\Ying\AppData\Roaming\XIVLauncher\devPlugins\Saucy\Saucy.dll
+C:\Users\Ying\AppData\Roaming\XIVLauncher\devPlugins\Saucy\Saucy.pdb
+C:\Users\Ying\Downloads\Compressed\Saucy-master\Saucy-master\Saucy\obj\x64\Debug\Saucy.csproj.CopyComplete
+C:\Users\Ying\Downloads\Compressed\Saucy-master\Saucy-master\Saucy\obj\x64\Debug\Saucy.dll
+C:\Users\Ying\Downloads\Compressed\Saucy-master\Saucy-master\Saucy\obj\x64\Debug\Saucy.pdb
